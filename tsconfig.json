@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "jsx": "react-jsx",
+    "lib": ["dom", "es2015"],
+    "target": "es5",
+    "noImplicitAny": false,
+    "esModuleInterop": true,
+     "skipLibCheck": true,
+    "outDir": "./dist",
+    "paths": {
+        "@assets/*": ["assets/*"],
+        "@types": ["types/types.ts"],
+        "@pages": ["pages/pages.ts"],
+        "@constants": ["constants/constants.ts"],
+        "@services": ["services/services.ts"],
+        "@utils": ["utils/utils.ts"],
+        "@layouts": ["layouts/layouts.ts"],
+        "@components": ["components/components.ts"],
+        "@providers": ["providers/providers.ts"],
+        "@contexts": ["contexts/contexts.ts"],
+        "@hooks": ["hooks/hooks.ts"]
+    },
+}
+,
+ "include": ["src/**/*.ts", "src/**/*.tsx"],
+ "exclude": ["node_modules", "dist"]
+}
